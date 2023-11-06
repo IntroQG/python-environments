@@ -22,10 +22,9 @@ This briefly describes how to install a Python virtual environment for the Intro
     ```bash
     mamba env create -f introqg-student.yml
     ```
-2. Activate the new environment, install the jupyterlab-git plugin using pip, and update JupyterLab
+2. Activate the new environment and update JupyterLab
     ```bash
     conda activate introqg-student
-    pip install --pre jupyterlab-git==0.50.0a1
     sh postBuild
     ```
 ## Creating the environment for teachers
@@ -33,9 +32,8 @@ This briefly describes how to install a Python virtual environment for the Intro
     ```bash
     mamba env create -f introqg-teacher.yml
     ```
-2. Activate the new environment, install the jupyterlab-git plugin using pip, and update JupyterLab
+2. Activate the new environment and update JupyterLab
     ```bash
     conda activate introqg-teacher
-    pip install --pre jupyterlab-git==0.50.0a1
     sh postBuild
     ```

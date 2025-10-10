@@ -4,7 +4,7 @@
 
 This briefly describes how to install a Python virtual environment for the Introduction to Quantitative Geology course.
 
-1. Install micromamba following the instructionst as https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html.
+1. Install micromamba following the instructions at https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html.
 2. Clone the course Python environments from GitHub
     ```bash
     git clone https://github.com/introqg/python-environments.git
@@ -13,25 +13,26 @@ This briefly describes how to install a Python virtual environment for the Intro
     ```bash
     cd python-environments
     ```
+
 ## Creating the environment for students
 
-1. Create the python environment using mamba
+1. Create the python environment using micromamba
     ```bash
     micromamba env create -f introqg-student.yml
     ```
 2. Activate the new environment and update JupyterLab
     ```bash
-    conda activate introqg-student-2025
+    micromamba activate introqg-student-2025
     sh postBuild
     ```
 ## Creating the environment for teachers
 
-1. Create the python environment using mamba
+1. Create the python environment using micromamba
     ```bash
     micromamba env create -f introqg-teacher.yml
     ```
 2. Activate the new environment and update JupyterLab
     ```bash
-    conda activate introqg-teacher-2025
+    micromamba activate introqg-teacher-2025
     sh postBuild
     ```
